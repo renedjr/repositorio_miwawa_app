@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns ="http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/10"
+versionCode ="10"
+version = "1.0.0" >
+<!-- version para android ¡-->
+<name>MiWawa On Line </name>
+<description>
+	Todo para ti en MiWawa On Line
+</description>
+<author herf="Miwawaonline.com" email="contacto@miwawaonline.com">
+https://github.com/renedjr/repositorio_miwawa_app.git 
+</author>
+</widget>
