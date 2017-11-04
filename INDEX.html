@@ -1,0 +1,456 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="www/jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<!--<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript">
+
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+</script>¡-->
+<script src="www/jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<!-- Esta referencia a phonegap.js permitirá disponer de sugerencias para el código, siempre y cuando el sitio actual se haya configurado como aplicación móvil. 
+	 Para configurar el sitio como aplicación móvil, vaya a Sitio -> Aplicaciones móviles -> Configurar framework de aplicación... -->
+¡<!--script src="/phonegap.js" type="text/javascript"></script>¡-->
+<script src="/phonegap.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+</head> 
+<body onLoad="MM_CheckFlashVersion('7,0,0,0','El contenido de la página requiere una nueva versión del reproductor Macromedia Flash.  Desea descargarlo ahora?');"> 
+
+<div data-role="page" id="Inicio">
+	<div data-role="header" class="ui-btn-active" >
+<p>.
+</p>
+
+
+	</div>
+      <div data-role="header" class="ui-btn-active-3" >
+    <h2 align="center" >MiWawaOnlineAPP</h2>
+    <h2 align="center">
+    <img src="index.html" alt="" width="70%" height="70%" id="Image2">
+    </h2>
+  </div>
+  <ul data-role="listview" data-inset="true">
+    <li><a href="#Modulo_1">Módulo 1 Preconcepcional</a></li>
+    <li><a href="#Modulo_2">Módulo 2 Embarazo</a></li>
+    <li><a href="#Modulo_3">Módulo 3 Post parto y crianza</a></li>
+  </ul>
+  	<div>
+		<h4>MiWawa Online App desarrollado por @Cotrol Solucion Ltad.</h4>
+	</div>
+</div>
+
+</div>
+<!-- INICIO MODULO 1 -->
+<div data-role="page" id="Modulo_1" class="ui-btn-active-2">
+
+	<div data-role="header"  class="ui-btn-active" >
+		<p>Módulo 1 Preconcepcional</p>
+
+	</div>
+
+	<div data-role="content">	
+			
+<!-- INICIO 1.1 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>1.1	Cuidados previos al embarazo </h3>
+		<H3>Infertilidad</H3>
+        <p>
+          <embed src="www/jquery-mobile/images/1_1_app.mp4" width="390" height="196"></embed>
+        </p>
+        <p>
+        La infertilidad afecta aproximadamente al 15% de los chilenos. Las causas pueden radicar en el hombre (30%), en la mujer (30%) o en ambos e incluso, en algunos casos, la causa puede llegar a ser inexplicable.
+        </p><p>
+CAUSAS DE LA INFERTILIDAD
+</p><p>
+30% causas masculinas: alteraciones en el ámbito testicular, obstrucción de conductos, patologías en la próstata, alteraciones en la eyaculación o erección y alteraciones en el semen.
+</p><p>
+30% causas femeninas: menopausia precoz, endometriosis, obstrucciones o lesiones de las trompas de Falopio, anomalías uterinas y cervicales o problemas ovulatorios.
+</p><p>
+20% causas mixtas o combinadas: en las cuales los dos miembros de la pareja son responsables.
+</p><p>
+Un 20% llega a ser una causa inexplicable, ya que la causa no se ha podido identificar.
+</p><p>
+Un 80% de los casos de esterilidad femenina se debe principalmente a:
+Edad avanzada: a partir de los 35 años el potencial reproductivo disminuye y después de los 40 años, la posibilidad de embarazo es menor del 10%.
+</p><p>
+Factor tubo-peritoneal: cuando las trompas de Falopio se encuentran con algún tipo de lesión.
+</p><p>
+Alrededor de 25% de los casos de esterilidad femenina se debe a un factor tubárico, es decir, a una alteración en las trompas de Falopio.
+En condiciones normales, las trompas se comportan como un caña de pescar recogiendo el óvulo liberado en la ovulación, trasportando los espermatozoides hacia el óvulo y conduciendo el óvulo ya fertilizado hasta el útero. El daño de las trompas parcial debido a una adherencia, o completo por obstrucción tubárica, impedirá este transporte y como consecuencia no se producirá la fecundación.
+</p><p>
+El daño tubárico puede producirse por:
+</p><p>
+• Infecciones que ascienden desde el cuello uterino o útero hacia las trompas (Enfermedad Inflamatoria Pélvica, EIP) o bien por continuidad desde la cavidad abdominal (apendicitis). Los gérmenes más frecuentemente implicados en la EIP son Gonorrea, Clamydia, entre otros.
+</p><p>
+• Cirugía pélvica anterior que hayan producido fenómenos de adherencias a nivel tubárico o la endometriosis.
+</p><p>
+El factor tubárico se relaciona también con embarazo ectópico, que es cuando el embrión no llega a la cavidad uterina por alteraciones en el diámetro y en la parte interna de la trompa que impide su adecuado transporte.
+</p><p>
+Endometriosis: cuando el tejido uterino se encuentra fuera del útero.
+Existe una amplia relación entre la endometriosis y la esterilidad, ya que se constata que un 10% de las mujeres la padecen y un 35% de las estériles la presentan. Su nombre deriva de la palabra endometrio, que es el tejido que reviste el útero en su interior, y que se descama cada mes con la menstruación. La endometriosis consiste en la presencia de este tejido endometrial fuera de su localización habitual que es dentro del útero. Su localización más frecuente es en los ovarios, trompas de Falopio, ligamentos que sustentan el útero, y revestimiento de la cavidad pélvica o abdominal. Es un tejido sensible a los cambios hormonales que se producen con la menstruación, y de ahí los síntomas que produce. Si bien algunas pacientes pueden no tener síntomas, lo más frecuentes son dolor e infertilidad.
+</p><p>
+El dolor puede estar relacionado exclusivamente con el momento de la menstruación, pero también puede haber síntomas gastrointestinales o urinarios, si estos implantes endometriósicos invaden otras estructuras como intestino, vejiga, o recto. La infertilidad relacionada con la endometriosis puede derivar de los cambios que ocurren en la anatomía pélvica de estas pacientes durante los ciclos menstruales. Puede provocar obstrucción de las trompas o formación de quistes ováricos endometriósicos, que en ocasiones precisarán cirugía, con la consecuente pérdida de tejido ovárico y disminución de la fertilidad. Existen tratamientos tanto médicos como quirúrgicos, y en muchos casos un embarazo puede frenar o mejorar la evolución de la enfermedad.
+</p><p>
+¿Cómo se detecta la endometriosis?
+</p><p>
+El diagnóstico de sospecha se puede establecer por la clínica y la visualización ecográfica de quistes chocolate, sin embargo un diagnóstico preciso sólo
+podrá llevarse a cabo mediante la visualización directa de las lesiones, que en ocasiones son de mínimo tamaño y únicamente es posible identificarlas a través de laparoscopia.
+</p><p>
+En el caso de endometriosis severa con quistes de chocolate, ¿es necesaria cirugía antes del tratamiento de reproducción asistida?
+Esta valoración le corresponde al ginecólogo teniendo en cuenta el tamaño de quiste y la reserva ovárica o capacidad de respuesta del ovario afecto. La FIV es un tratamiento apropiado para la esterilidad asociada a la endometriosis cuando otras técnicas han fracasado.
+</p><p>
+La gestación será una terapia temporal excelente para la mejora de la endometriosis.
+</p><p>
+Otros factores de riesgo: miomas; enfermedades de transmisión sexual;
+enfermedades crónicas, como diabetes, cáncer, enfermedad de tiroides, asma o
+depresión. Toma de medicación como antidepresivos.
+</p><p>
+Alrededor de un 20% de mujeres tiene ovarios poliquísticos (OP).
+</p><p>
+Este término hace referencia al incremento del número de pequeños quistes (folículos antrales) en la superficie del ovario al analizarlo en las ecografías. Existe un gran número de mujeres con OP que no tienen problemas de ovular y quedar embarazada.
+</p><p>
+Sin embargo, algunas de estas mujeres con este patrón ecográfico característico reúnen además la condición de Síndrome de Ovarios poliquísticos (SOP). Estas mujeres presentan ciclos menstruales irregulares o incluso ausencia de menstruación, por lo tanto tendrán problemas para quedar embarazadas por la falta de ovulación.
+</p><p>
+¿Por qué se produce la anovulación o ausencia de ovulación?
+</p><p>
+Entre los factores determinantes de esta situación estarían el estrés, la pérdida o ganancia de peso importante, excesiva producción de prolactina (hormona encargada de producir la leche materna) y los ovarios poliquísticos que merecen una mención especial por su complejidad y frecuencia. 
+</p><p>Aproximadamente un 35% de mujeres en algún momento de su vida presenta anovulación. El origen de la alteración hormonal puede estar en el hipotálamo, hipófisis, o en el ovario mismo.
+</p><p>
+En cuanto al Hombre, las principales causas de infertilidad masculina son:
+</p><p>
+Alteraciones del tracto genital que imposibilita depositar el semen en el fondo de la vagina durante el coito.
+</p><p>
+Problemas de erección.
+</p><p>
+Alteraciones en la producción del semen (disminución de la calidad y la cantidad del semen).
+</p><p>
+Situación anómala del meato urinario, curvaturas muy pronunciadas del pene o una gran disminución del mismo.
+</p><p>
+Obesidad extrema.
+</p><p>
+¿Qué
+Para estudiar la fertilidad masculina se lleva a cabo un análisis donde se testea el número, actividad y forma de los espermatozoides. Un resultado idóneo para concebir es tener más de 39 millones de espermatozoides en el eyaculado con al menos 32% de espermatozoides con movimiento progresivo y al menos un 4% de formas normales. Cuando se tienen cantidades menores la probabilidad de embarazo desciende considerablemente.
+</p><p>
+¿Cuáles son las causas de la poca producción de espermatozoides en los testículos?
+</p><p>
+Sus causas fundamentales pueden hallarse a nivel de las glándulas del cerebro (hipófisis o hipotálamo) que producen las hormonas que regulan la formación de espermatozoides, a alteraciones genéticas (síndrome de Kinefelter, alteraciones de los genes contenidos en el cromosoma y que regulan la formación de los espermatozoides) o por una gran cantidad de problemas de los testículos, como falta de desarrollo, desarrollo anómalo o falta de descenso en la bolsa.
+</p><p>
+¿Qué tipo de anomalías se producen en los espermatozoides?
+Los espermatozoides pueden presentar anomalías en su movimiento (astenozoospermia), en su forma (terazoospermia) o su vitalidad (necrozoospermia).
+</p><p>
+¿Cuáles son las causas de presentar anomalías en los espermatozoides?
+</p><p>
+• Infecciones o presencia de anticuerpos.
+</p><p>
+• Alteraciones en el número de cromosomas mediante FISH; fragmentación de
+ADN; fenómenos de oxidación; varicocele, etc.
+</p><p>
+• Diabetes; tiroides; insuficiencia renal y hepática así como la toma de determinados fármacos, drogas, tabaco y situaciones de estrés.
+        </p>
+    </div> 	
+<!-- INICIO 1.2 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>1.2	Planificación del embarazo </h3>
+		<H3>1.2	Planificación del embarazo I</H3>
+        <p>Tener un hijo es el proyecto más importante y feliz que afronta una pareja. Por eso conviene prepararse lo mejor posible. 
+        </p><p>
+        Para eso te entregamos algunas recomendaciones:
+        </p><p>
+1. Dejar los hábitos tóxicos, como el tabaco y alcohol.
+</p><p>
+2. Lograr un peso ideal, si estás sobrepeso o bajo peso, es recomendable que te evalúe y guie un nutricionista.
+</p><p>
+3. Evaluación por ginecólogo, quien se asegurará, mediante un análisis de sangre, de que la futura madre no sufre anemia ni otros trastornos que pudieran complicar su embarazo.
+</p><p>
+4. Mediante un exámen de sangre averiguar si se han pasado ciertas infecciones que, en caso de sufrirlas durante la gestación, pueden afectar al futuro bebé: rubéola, toxoplasmosis, hepatitis, sífilis, sida.
+</p><p>
+5. Evaluación con dentista, de esta forma, se evita tener que someterse a tratamientos dentales durante la gestación, además de prepararse ya que durante la gestación suelen inflamarse las encías.
+</p><p>
+6. Evaluación de piso pélvico por kinesióloga especialista, con el fin de preparar la musculatura de esta zona y lograr así una buena gestación, parto y post parto, evitando problemas a futuro comola incontinencia de orina y los prolapsos genitales.
+</p><p>
+7. Ponerse en buena forma: comenzar a practicar un deporte u otro ejercicio que se pueda seguir haciendo durante el embarazo.
+</p><p>
+8. Empezar a tomar ácido fólico tres meses antes de abandonar el método anticonceptivo. Esta vitamina del grupo B resulta primordial para la salud de la madre y del hijo, evita ciertos tipos de anemia y previene ciertas malformaciones en el futuro bebé.
+</p><p>
+9. Realizar las reformas necesarias para adaptar la vivienda a la llegada del niño. Las obras son una fuente de preocupaciones, y durante el embarazo no es aconsejable agobiarse, ni tener contacto con barnices ni con disolventes.
+</p><p>
+10. Evaluación con Matrona y psicóloga con el fin de aclarar dudas respecto a la futura gestación y a los proyectos de vida
+Participa: Matrona Psicóloga Nutricionista Kinesióloga
+        </p>
+    </div>
+<!-- INICIO 1.3 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>1.3	Infertilidad</h3>
+		<H3>Planificación del Embarazo II</H3>
+        <p>
+        Sólo un 30% de los embarazos son planificados, si estás dentro de estas parejas, es importante que consideres algunos aspectos:
+        </p><p>
+-Todo lo que ocurre durante la gestación y los primeros 3 años de vida, formará la vida futura de tu hijo(a), por lo tanto es ideal planificar tu embarazo en conjunto con tu pareja, sin embargo, por muy planificado que esté tu guagüita, van a surgir dudas, temores y preocupaciones propias de la gestación, por lo que no debes tener temor a expresarlas, sin tener miedo a ser juzgada por lo que pienses, ya que la sociedad resulta ser muy exigente con la gestante, la que muchas veces no deja que te expreses con libertad.
+</p><p>
+-Expresa sin miedo, ya que la única vez en la vida que 2 personas son 1 es durante la gestación, por lo que tus pensamientos van a ser los de tu guagüita y tus emociones también, por lo que lo que vas haciendo y sintiendo es lo que le vas enseñando, es decir, si expresas libremente lo que sientes, el o ella hará lo mismo, pero si te reprimes, eso es lo que aprenderá.
+</p><p>
+-Cuando decides embarazarte, vas a tu ginecólogo para dejar tu método anticonceptivo, ten en cuenta que no existe un tiempo determinado desde que dejas el método hasta que te embarazas, en general puede pasar desde algunos meses hasta 1 año, sin embargo cada vez se demoran menos en embarazarse, entre 1 y 2 meses, lo que está ocurriendo cada vez más seguido y sorprende a las parejas a pesar de ser un embarazo planificado.
+</p><p>
+-no pienses tanto en embarazarte, sólo siente y disfruta de la intimidad con tu pareja, ya que esto favorece a que la gestación ocurra y a que tu guagüita llegue a este mundo con mucho amor desde el momento en que es concebida.
+        </p>
+    </div>
+	</div>
+	<div >
+				<h4>MiWawa Online App desarrollado por @Cotrol Solucion Ltad.</h4>
+	</div>
+</div>
+<!-- FIN MODULO 1 -->
+<!-- INICIO MODULO 2 -->
+<div data-role="page" id="Modulo_2" class="ui-btn-active-2">
+
+	<div data-role="header"  class="ui-btn-active" >
+		<p>Módulo 2 Embarazo</p>
+
+	</div>
+	<div data-role="content">	
+		Contenido	
+<!-- INICIO 2.1 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.1 Cambios físicos en el embarazo </h3>
+		<H3> Cambios físicos en el embaraz Contedido Gratuito</H3>
+        <p>
+          <embed src="www/jquery-mobile/images/2_1_app.mp4" width="390" height="196"></embed>
+        </p>
+     
+    </div>	
+<!-- INICIO 2.2 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.2 Cambios emocionales en el embarazo </h3>
+		<H3>CAMBIOS EMOCIONALES EN LA GESTACION</H3>
+        <p>
+        <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.3 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.3 Vinculación Prenatal </h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.4 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.4 Cuidados nutricionales en el embarazo</h3>
+		<H3>Diabetes Gestacional (DG) Contenido Gratuito</H3>
+        <p>
+        
+          <embed src="www/jquery-mobile/images/2_4_app.mp4"width="390" height="196"></embed>
+        </p>
+    </div>
+<!-- INICIO 2.5 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.5 Nutrición durante la gestación</h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.6 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.6 Piso Pélvico y Periné</h3>
+		<H3>PISO PÉLVICO</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.7 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.7 Funciones del piso pélvico</h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.8 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>2.8 Sexualidad en el Embarazo</h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.9 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.9 Gimnasia prenatal – Calentamiento</h3>
+		<H3>EJERCICIOS contenido Gratuito</H3>
+        <p>
+          <embed src="www/jquery-mobile/images/2_9_app.mp4" width="390" height="196"></embed>
+        </p>
+    </div>
+<!-- INICIO 2.10 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.10 Gimnasia prenatal Primer trimestre</h3>
+		<H3>La actividad física
+durante el embarazo</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.11 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.11 Gimnasia prenatal Segundo trimestre</h3>
+		<H3>ejercicio_fisico_en_el_embarazo</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div> 
+<!-- INICIO 2.12 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.12 Gimnasia prenatal Tercer trimestre</h3>
+		<H3>EJERCICIOS PRENATAL III</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div> 
+<!-- INICIO 2.13 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.13 Aquagym</h3>
+		<H3>AQUA GYM</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.14 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.14 Parto</h3>
+		<H3>Infertilidad contenido Gratuito</H3>
+        <p>
+          <embed src="www/jquery-mobile/images/2_14_app.mp4" width="390" height="196"></embed>
+        </p>
+    </div>
+<!-- INICIO 2.15 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.15 Movimiento en Trabajo de Parto I</h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.16 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.16 Movimiento en trabajo de Parto II</h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.17 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.17 Papá Embarazado </h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+<!-- INICIO 2.18 -->
+        <div data-role="collapsible" data-collapsed="true">
+      <h3>2.18 Tips Cuidados Maternos </h3>
+		<H3>Infertilidad</H3>
+        <p> <img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+	</div>
+	<div>
+			<h4>MiWawa Online App desarrollado por @Cotrol Solucion Ltad.</h4>
+	</div>
+</div>
+<!-- FIN MODULO 2 -->
+<!-- INICIO MODULO 3 -->
+<div data-role="page" id="Modulo_3" class="ui-btn-active-2">
+
+	<div data-role="header"  class="ui-btn-active" >
+		<p>Módulo 3 Post parto y Crianza</p>
+
+	</div>
+	<div data-role="content">	
+	<!-- INICIO 3.1 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.1	Infertilidad </h3>
+	<H3>Infertilidad contenido Gratuito</H3>
+        <p>
+          <embed src="www/jquery-mobile/images/3_1_app.mp4" width="390" height="196"></embed>
+        </p>
+    </div>
+    <!-- INICIO 3.2 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.2 Piso pélvico en el post parto</h3>
+	<H3>Piso pélvico en el post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.3 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.3 Gimnasia post parto</h3>
+	<H3>Gimnasia post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.4 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.4 Sexualidad en el post parto</h3>
+	<H3>Sexualidad en el post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.5 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.5 Depresión post parto</h3>
+	<H3>Depresión post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.6 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.6 Nutrición materna en el post parto</h3>
+	<H3>Nutrición materna en el post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.7 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.7 Tips para el Post parto</h3>
+	<H3>Tips para el Post parto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.8 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.8 Introducción de Alimentación complementaria</h3>
+	<H3>Introducción de Alimentación complementaria</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.9 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.9 Rabietas, sueño y llanto</h3>
+	<H3>Rabietas, sueño y llanto</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.10 -->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.10 Desarrollo motor R.N. al año de vida</h3>
+	<H3>Desarrollo motor R.N. al año de vida</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+        <!-- INICIO 3.11-->
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>3.11 Apego</h3>
+	<H3>Apego</H3>
+        <p><img src="www/jquery-mobile/images/play.jpg" width="390" height="196" alt=""> </p>
+    </div>
+	</div>
+	<div>
+			<h4>MiWawa Online App desarrollado por @Cotrol Solucion Ltad.</h4>
+	</div>
+</div>
+<!-- FIN MODULO 3 -->
+	<div>
+		<h4>Pie de página</h4>
+	</div>
+</body>
+</html>
